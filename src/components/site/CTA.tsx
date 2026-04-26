@@ -33,7 +33,7 @@ const CTA = () => {
               প্রতিটি অভিযোগ আমাদের কাছে গুরুত্বপূর্ণ। আপনার একটি বার্তা — সমাধানের সূচনা।
             </p>
 
-            <div className="mt-10 flex flex-wrap gap-4 justify-center">
+            <div className="mt-8 flex flex-wrap gap-4 justify-center">
               <a
                 href="#complaint"
                 className="inline-flex items-center gap-2 rounded-full bg-white text-primary px-8 py-4 text-base font-bold shadow-elevated hover:shadow-glow hover:scale-105 transition-all"
