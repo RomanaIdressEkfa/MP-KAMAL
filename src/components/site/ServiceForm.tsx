@@ -47,13 +47,13 @@ const ServiceForm = () => {
   };
 
   return (
-    <section id="service" className="relative py-24 lg:py-32 overflow-hidden bg-background">
+    <section id="service" className="relative section-y overflow-hidden bg-background">
       {/* glow background */}
-      <div className="absolute -top-32 -left-32 h-96 w-96 rounded-full bg-primary/15 blur-3xl" />
-      <div className="absolute -bottom-32 -right-32 h-[28rem] w-[28rem] rounded-full bg-accent/15 blur-3xl" />
+      <div className="absolute -top-32 -left-32 h-96 w-96 rounded-full bg-primary/15 blur-3xl animate-pulse-glow" />
+      <div className="absolute -bottom-32 -right-32 h-[28rem] w-[28rem] rounded-full bg-accent/15 blur-3xl animate-float-slow" />
 
       <div id="complaint" className="container mx-auto relative">
-        <div className="grid lg:grid-cols-5 gap-10 items-stretch">
+        <div className="grid lg:grid-cols-5 gap-8 lg:gap-10 items-stretch">
           {/* Left info */}
           <div className="lg:col-span-2 flex flex-col" data-aos="fade-right">
             <span className="inline-flex w-fit items-center gap-2 rounded-full bg-primary/10 text-primary px-4 py-2 text-xs font-bold tracking-wider uppercase">
