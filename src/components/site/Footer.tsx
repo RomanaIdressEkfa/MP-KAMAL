@@ -82,7 +82,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-primary-foreground/60">
+        <div className="mt-10 pt-5 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-primary-foreground/60">
           <div>© ২০২৬ জননেতা রহমান। সর্বস্বত্ব সংরক্ষিত।</div>
           <div className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
