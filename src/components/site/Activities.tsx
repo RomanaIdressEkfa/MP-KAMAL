@@ -17,19 +17,19 @@ const items = [
 
 const Activities = () => {
   return (
-    <section id="activities" className="relative py-24 lg:py-32 section-soft overflow-hidden">
+    <section id="activities" className="relative section-y section-soft overflow-hidden">
       <div className="container mx-auto">
         <div className="text-center max-w-2xl mx-auto" data-aos="fade-up">
-          <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 text-primary px-4 py-2 text-xs font-bold tracking-wider uppercase">
+          <span className="eyebrow">
             সাম্প্রতিক কার্যক্রম
           </span>
-          <h2 className="mt-5 font-display text-4xl sm:text-5xl font-extrabold text-foreground leading-tight">
-            জনগণের জন্য <span className="text-gradient">নিরন্তর কাজ</span>
+          <h2 className="mt-4 font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-foreground leading-tight">
+            জনগণের জন্য <span className="text-gradient-animated">নিরন্তর কাজ</span>
           </h2>
-          <p className="mt-4 text-muted-foreground text-lg">প্রতিদিন, প্রতিনিয়ত — মানুষের পাশে থাকার অঙ্গীকার।</p>
+          <p className="mt-4 text-muted-foreground text-base sm:text-lg">প্রতিদিন, প্রতিনিয়ত — মানুষের পাশে থাকার অঙ্গীকার।</p>
         </div>
 
-        <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+        <div className="mt-10 sm:mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
           {items.map((it, i) => (
             <article
               key={it.title}
