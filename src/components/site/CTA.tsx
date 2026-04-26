@@ -25,7 +25,7 @@ const CTA = () => {
               <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
               এখনই পদক্ষেপ নিন
             </span>
-            <h2 className="mt-6 font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
+            <h2 className="mt-5 font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
               আপনার সমস্যার কথা জানাতে <br />
               <span className="text-gradient-gold">এখনই যোগাযোগ করুন</span>
             </h2>
