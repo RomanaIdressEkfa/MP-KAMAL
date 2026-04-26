@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { ArrowRight, MessageSquareWarning } from "lucide-react";
-import hero1 from "@/assets/hero-1.jpg";
+import hero1 from "@/assets/download.png";
 import hero2 from "@/assets/hero-2.jpg";
 import hero3 from "@/assets/hero-3.jpg";
 

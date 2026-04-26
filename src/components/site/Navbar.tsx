@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Menu, X } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const links = [
   { href: "#home", label: "হোম" },
@@ -26,17 +26,23 @@ const Navbar = () => {
     <header
       className={cn(
         "fixed top-0 inset-x-0 z-50 transition-all duration-500",
-        scrolled ? "glass shadow-soft py-2" : "bg-transparent py-4"
+        scrolled ? "glass shadow-soft py-2" : "bg-transparent py-4",
       )}
     >
       <nav className="container mx-auto flex items-center justify-between">
         <a href="#home" className="flex items-center gap-3 group">
           <span className="relative flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-primary shadow-glow transition-transform group-hover:scale-110">
-            <span className="font-display text-primary-foreground text-xl font-bold">জ</span>
+            <span className="font-display text-primary-foreground text-xl font-bold">
+              ক
+            </span>
           </span>
           <div className="leading-tight">
-            <div className="font-display text-lg font-bold text-foreground">জননেতা রহমান</div>
-            <div className="text-[11px] font-medium text-primary tracking-wide">আপনার সেবায় নিবেদিত</div>
+            <div className="font-display text-lg font-bold text-foreground">
+              মোহাম্মদ কামাল হোসেন এমপি
+            </div>
+            <div className="text-[11px] font-medium text-primary tracking-wide">
+              আপনার সেবায় নিবেদিত
+            </div>
           </div>
         </a>
 
@@ -70,7 +76,7 @@ const Navbar = () => {
       <div
         className={cn(
           "lg:hidden overflow-hidden transition-all duration-500",
-          open ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+          open ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0",
         )}
       >
         <div className="container mx-auto mt-3 rounded-2xl glass shadow-elevated p-4">

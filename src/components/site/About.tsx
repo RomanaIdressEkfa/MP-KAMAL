@@ -1,6 +1,6 @@
-import { CheckCircle2, Award, Users, Heart } from "lucide-react";
 import aboutLeader from "@/assets/about-leader.jpg";
 import activity4 from "@/assets/activity-4.jpg";
+import { Award, CheckCircle2, Heart, Users } from "lucide-react";
 
 const points = [
   "২৫+ বছরের জনসেবার অভিজ্ঞতা",
@@ -11,7 +11,10 @@ const points = [
 
 const About = () => {
   return (
-    <section id="about" className="relative section-soft section-y overflow-hidden">
+    <section
+      id="about"
+      className="relative section-soft section-y overflow-hidden"
+    >
       <div className="absolute inset-0 section-radial pointer-events-none" />
 
       <div className="container mx-auto relative">
@@ -25,7 +28,7 @@ const About = () => {
               <div className="col-span-3 group rounded-3xl overflow-hidden shadow-premium aspect-[4/5] relative">
                 <img
                   src={aboutLeader}
-                  alt="জননেতা রহমান"
+                  alt="মোহাম্মদ কামাল হোসেন এমপি"
                   loading="lazy"
                   width={1024}
                   height={1280}
@@ -44,8 +47,12 @@ const About = () => {
                 </div>
                 <div className="rounded-3xl bg-gradient-primary p-5 shadow-glow text-primary-foreground flex-1 flex flex-col justify-center hover:scale-105 transition-transform duration-500 relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent opacity-50" />
-                  <div className="relative font-display text-3xl sm:text-4xl font-extrabold">২৫+</div>
-                  <div className="relative text-sm font-medium opacity-90 mt-1">বছরের জনসেবা</div>
+                  <div className="relative font-display text-3xl sm:text-4xl font-extrabold">
+                    ২৫+
+                  </div>
+                  <div className="relative text-sm font-medium opacity-90 mt-1">
+                    বছরের জনসেবা
+                  </div>
                 </div>
               </div>
             </div>
@@ -58,15 +65,19 @@ const About = () => {
               আমাদের সম্পর্কে
             </span>
             <h2 className="mt-4 font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-foreground leading-tight">
-              পরিচিতি <span className="text-gradient-animated">জননেতা রহমান</span>
+              পরিচিতি{" "}
+              <span className="text-gradient-animated">
+                মোহাম্মদ কামাল হোসেন এমপি
+              </span>
             </h2>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-              একজন নিবেদিতপ্রাণ জনপ্রতিনিধি, যিনি দুই যুগেরও বেশি সময় ধরে সাধারণ মানুষের পাশে দাঁড়িয়েছেন।
-              তাঁর নেতৃত্বে এলাকার শিক্ষা, স্বাস্থ্য, কৃষি ও অবকাঠামো খাতে এসেছে দৃশ্যমান উন্নয়ন।
+              একজন নিবেদিতপ্রাণ জনপ্রতিনিধি, যিনি দুই যুগেরও বেশি সময় ধরে
+              সাধারণ মানুষের পাশে দাঁড়িয়েছেন। তাঁর নেতৃত্বে এলাকার শিক্ষা,
+              স্বাস্থ্য, কৃষি ও অবকাঠামো খাতে এসেছে দৃশ্যমান উন্নয়ন।
             </p>
             <p className="mt-4 text-base text-muted-foreground leading-relaxed">
-              "মানুষের সেবা করাই আমার একমাত্র ব্রত। প্রতিটি অভিযোগ আমার কাছে গুরুত্বপূর্ণ — কারণ
-              আপনার বিশ্বাসই আমার সবচেয়ে বড় সম্পদ।"
+              "মানুষের সেবা করাই আমার একমাত্র ব্রত। প্রতিটি অভিযোগ আমার কাছে
+              গুরুত্বপূর্ণ — কারণ আপনার বিশ্বাসই আমার সবচেয়ে বড় সম্পদ।"
             </p>
 
             <ul className="mt-8 grid sm:grid-cols-2 gap-3">
@@ -77,8 +88,13 @@ const About = () => {
                   data-aos-delay={i * 80}
                   className="flex items-start gap-3 rounded-2xl bg-card border border-border/60 p-4 shadow-soft hover:shadow-elevated hover:-translate-y-1 transition-all"
                 >
-                  <CheckCircle2 className="text-primary shrink-0 mt-0.5" size={20} />
-                  <span className="text-sm font-semibold text-foreground">{p}</span>
+                  <CheckCircle2
+                    className="text-primary shrink-0 mt-0.5"
+                    size={20}
+                  />
+                  <span className="text-sm font-semibold text-foreground">
+                    {p}
+                  </span>
                 </li>
               ))}
             </ul>
@@ -89,8 +105,12 @@ const About = () => {
                   <Users className="text-primary-foreground" size={22} />
                 </div>
                 <div>
-                  <div className="font-display text-xl font-bold text-foreground">৫০ হাজার+</div>
-                  <div className="text-xs text-muted-foreground">সরাসরি উপকারভোগী</div>
+                  <div className="font-display text-xl font-bold text-foreground">
+                    ৫০ হাজার+
+                  </div>
+                  <div className="text-xs text-muted-foreground">
+                    সরাসরি উপকারভোগী
+                  </div>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -98,8 +118,12 @@ const About = () => {
                   <Heart className="text-accent-foreground" size={22} />
                 </div>
                 <div>
-                  <div className="font-display text-xl font-bold text-foreground">১২+ পুরস্কার</div>
-                  <div className="text-xs text-muted-foreground">সমাজসেবায় স্বীকৃতি</div>
+                  <div className="font-display text-xl font-bold text-foreground">
+                    ১২+ পুরস্কার
+                  </div>
+                  <div className="text-xs text-muted-foreground">
+                    সমাজসেবায় স্বীকৃতি
+                  </div>
                 </div>
               </div>
             </div>

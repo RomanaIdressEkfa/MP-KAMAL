@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* ===========================================================
-   জননেতা রহমান — Premium Bangla Political Design System
+   মোহাম্মদ কামাল হোসেন এমপি— Premium Bangla Political Design System
    White background • Bangladesh green premium tone
    All colors HSL.
    =========================================================== */
@@ -46,20 +46,58 @@
     --radius: 1rem;
 
     /* Premium gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(145 75% 28%) 0%, hsl(142 70% 45%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(150 80% 18% / 0.85) 0%, hsl(145 75% 28% / 0.65) 50%, hsl(142 70% 45% / 0.4) 100%);
-    --gradient-soft: linear-gradient(180deg, hsl(90 30% 99%) 0%, hsl(140 50% 96%) 100%);
-    --gradient-radial: radial-gradient(ellipse at top, hsl(142 70% 45% / 0.18) 0%, transparent 60%);
-    --gradient-gold: linear-gradient(135deg, hsl(42 95% 55%) 0%, hsl(36 90% 48%) 100%);
-    --gradient-vision: linear-gradient(135deg, hsl(150 80% 18%) 0%, hsl(145 75% 28%) 50%, hsl(142 60% 22%) 100%);
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(145 75% 28%) 0%,
+      hsl(142 70% 45%) 100%
+    );
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(150 80% 18% / 0.85) 0%,
+      hsl(145 75% 28% / 0.65) 50%,
+      hsl(142 70% 45% / 0.4) 100%
+    );
+    --gradient-soft: linear-gradient(
+      180deg,
+      hsl(90 30% 99%) 0%,
+      hsl(140 50% 96%) 100%
+    );
+    --gradient-radial: radial-gradient(
+      ellipse at top,
+      hsl(142 70% 45% / 0.18) 0%,
+      transparent 60%
+    );
+    --gradient-gold: linear-gradient(
+      135deg,
+      hsl(42 95% 55%) 0%,
+      hsl(36 90% 48%) 100%
+    );
+    --gradient-vision: linear-gradient(
+      135deg,
+      hsl(150 80% 18%) 0%,
+      hsl(145 75% 28%) 50%,
+      hsl(142 60% 22%) 100%
+    );
 
     /* Premium shadows — multi-layer for depth */
-    --shadow-glow: 0 0 80px hsl(142 70% 45% / 0.45), 0 0 30px hsl(142 70% 45% / 0.25);
-    --shadow-soft: 0 4px 12px -2px hsl(150 60% 20% / 0.08), 0 14px 40px -12px hsl(150 60% 20% / 0.18);
-    --shadow-elevated: 0 8px 24px -8px hsl(150 80% 18% / 0.18), 0 30px 70px -20px hsl(150 80% 18% / 0.32);
-    --shadow-premium: 0 12px 40px -12px hsl(145 75% 28% / 0.30), 0 40px 90px -25px hsl(145 75% 28% / 0.50), 0 0 0 1px hsl(145 75% 28% / 0.04);
-    --shadow-gold: 0 8px 28px -8px hsl(42 95% 55% / 0.45), 0 20px 50px -15px hsl(42 95% 55% / 0.55);
-    --shadow-card: 0 1px 2px hsl(150 30% 15% / 0.04), 0 8px 24px -8px hsl(150 30% 15% / 0.10), 0 24px 60px -20px hsl(150 30% 15% / 0.14);
+    --shadow-glow:
+      0 0 80px hsl(142 70% 45% / 0.45), 0 0 30px hsl(142 70% 45% / 0.25);
+    --shadow-soft:
+      0 4px 12px -2px hsl(150 60% 20% / 0.08),
+      0 14px 40px -12px hsl(150 60% 20% / 0.18);
+    --shadow-elevated:
+      0 8px 24px -8px hsl(150 80% 18% / 0.18),
+      0 30px 70px -20px hsl(150 80% 18% / 0.32);
+    --shadow-premium:
+      0 12px 40px -12px hsl(145 75% 28% / 0.3),
+      0 40px 90px -25px hsl(145 75% 28% / 0.5),
+      0 0 0 1px hsl(145 75% 28% / 0.04);
+    --shadow-gold:
+      0 8px 28px -8px hsl(42 95% 55% / 0.45),
+      0 20px 50px -15px hsl(42 95% 55% / 0.55);
+    --shadow-card:
+      0 1px 2px hsl(150 30% 15% / 0.04), 0 8px 24px -8px hsl(150 30% 15% / 0.1),
+      0 24px 60px -20px hsl(150 30% 15% / 0.14);
 
     --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -84,11 +122,15 @@
   }
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Hind Siliguri', system-ui, sans-serif;
+    font-family: "Hind Siliguri", system-ui, sans-serif;
     font-feature-settings: "ss01", "cv11";
   }
-  h1, h2, h3, h4, h5 {
-    font-family: 'Noto Serif Bengali', 'Hind Siliguri', serif;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Noto Serif Bengali", "Hind Siliguri", serif;
     font-weight: 700;
     letter-spacing: -0.01em;
   }
@@ -115,7 +157,12 @@
   .text-gradient-animated {
     color: hsl(145 75% 28%);
     position: relative;
-    background: linear-gradient(120deg, hsl(145 75% 28%), hsl(142 65% 38%), hsl(145 75% 28%));
+    background: linear-gradient(
+      120deg,
+      hsl(145 75% 28%),
+      hsl(142 65% 38%),
+      hsl(145 75% 28%)
+    );
     background-size: 200% 100%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -124,7 +171,9 @@
   }
   /* Fallback: if clipping fails (some Bengali rendering paths), keep visible color */
   @supports not (-webkit-background-clip: text) {
-    .text-gradient, .text-gradient-gold, .text-gradient-animated {
+    .text-gradient,
+    .text-gradient-gold,
+    .text-gradient-animated {
       -webkit-text-fill-color: currentColor;
       background: none;
     }
@@ -134,12 +183,19 @@
   .premium-card {
     @apply bg-card rounded-2xl border border-border/60 relative overflow-hidden;
     box-shadow: var(--shadow-card);
-    transition: transform 0.5s var(--transition-bounce), box-shadow 0.5s var(--transition-smooth);
+    transition:
+      transform 0.5s var(--transition-bounce),
+      box-shadow 0.5s var(--transition-smooth);
   }
   .premium-card::before {
-    content: '';
+    content: "";
     @apply absolute inset-0 pointer-events-none opacity-0 transition-opacity duration-500;
-    background: linear-gradient(135deg, transparent 30%, hsl(0 0% 100% / 0.15) 50%, transparent 70%);
+    background: linear-gradient(
+      135deg,
+      transparent 30%,
+      hsl(0 0% 100% / 0.15) 50%,
+      transparent 70%
+    );
   }
   .premium-card:hover {
     box-shadow: var(--shadow-premium);
@@ -162,7 +218,7 @@
     @apply relative font-semibold text-foreground/80 transition-colors hover:text-primary;
   }
   .nav-link::after {
-    content: '';
+    content: "";
     @apply absolute left-0 -bottom-1 h-[3px] w-0 rounded-full bg-gradient-to-r from-primary to-primary-glow transition-all duration-300;
   }
   .nav-link:hover::after,
@@ -201,17 +257,39 @@
 }
 
 @layer utilities {
-  .shadow-glow { box-shadow: var(--shadow-glow); }
-  .shadow-soft { box-shadow: var(--shadow-soft); }
-  .shadow-elevated { box-shadow: var(--shadow-elevated); }
-  .shadow-premium { box-shadow: var(--shadow-premium); }
-  .shadow-gold { box-shadow: var(--shadow-gold); }
-  .shadow-card { box-shadow: var(--shadow-card); }
-  .bg-gradient-primary { background-image: var(--gradient-primary); }
-  .bg-gradient-hero { background-image: var(--gradient-hero); }
-  .bg-gradient-soft { background-image: var(--gradient-soft); }
-  .bg-gradient-vision { background-image: var(--gradient-vision); }
-  .bg-gradient-gold { background-image: var(--gradient-gold); }
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  .shadow-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+  .shadow-premium {
+    box-shadow: var(--shadow-premium);
+  }
+  .shadow-gold {
+    box-shadow: var(--shadow-gold);
+  }
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  .bg-gradient-primary {
+    background-image: var(--gradient-primary);
+  }
+  .bg-gradient-hero {
+    background-image: var(--gradient-hero);
+  }
+  .bg-gradient-soft {
+    background-image: var(--gradient-soft);
+  }
+  .bg-gradient-vision {
+    background-image: var(--gradient-vision);
+  }
+  .bg-gradient-gold {
+    background-image: var(--gradient-gold);
+  }
 
   .animate-float {
     animation: float 6s ease-in-out infinite;
@@ -253,28 +331,56 @@
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
 }
 @keyframes pulseGlow {
-  0%, 100% { box-shadow: 0 0 30px hsl(var(--primary-glow) / 0.4); }
-  50% { box-shadow: 0 0 80px hsl(var(--primary-glow) / 0.8); }
+  0%,
+  100% {
+    box-shadow: 0 0 30px hsl(var(--primary-glow) / 0.4);
+  }
+  50% {
+    box-shadow: 0 0 80px hsl(var(--primary-glow) / 0.8);
+  }
 }
 @keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 @keyframes tilt {
-  0%, 100% { transform: rotate(-1deg); }
-  50% { transform: rotate(1deg); }
+  0%,
+  100% {
+    transform: rotate(-1deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
 }
 @keyframes shine {
-  0% { transform: translateX(-120%) skewX(-20deg); }
-  100% { transform: translateX(220%) skewX(-20deg); }
+  0% {
+    transform: translateX(-120%) skewX(-20deg);
+  }
+  100% {
+    transform: translateX(220%) skewX(-20deg);
+  }
 }
 @keyframes gradientShift {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 /* AOS subtle override */
