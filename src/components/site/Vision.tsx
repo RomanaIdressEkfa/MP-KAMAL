@@ -27,7 +27,7 @@ const Vision = () => {
           <span className="inline-flex items-center gap-2 rounded-full bg-white/15 backdrop-blur px-4 py-2 text-xs font-bold tracking-wider uppercase border border-white/25">
             <Sparkles size={14} className="text-accent" /> আমাদের দৃষ্টিভঙ্গি
           </span>
-          <h2 className="mt-6 font-display text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-[1.05]">
+          <h2 className="mt-5 font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.05]">
             একটি <span className="text-gradient-gold">সমৃদ্ধ ও আলোকিত</span> আগামীর প্রত্যয়
           </h2>
           <p className="mt-6 text-lg sm:text-xl text-primary-foreground/85 leading-relaxed max-w-2xl">
