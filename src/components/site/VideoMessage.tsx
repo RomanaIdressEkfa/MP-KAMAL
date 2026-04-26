@@ -3,9 +3,9 @@ import heroBg from "@/assets/hero-2.jpg";
 
 const VideoMessage = () => {
   return (
-    <section className="relative py-24 lg:py-32 bg-background overflow-hidden">
+    <section className="relative section-y bg-background overflow-hidden">
       <div className="container mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
           {/* Video block */}
           <div data-aos="fade-right" className="relative">
             <div className="relative aspect-video rounded-3xl overflow-hidden shadow-premium group cursor-pointer">
