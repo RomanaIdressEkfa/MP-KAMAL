@@ -53,12 +53,12 @@ const About = () => {
 
           {/* Text */}
           <div data-aos="fade-left">
-            <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 text-primary px-4 py-2 text-xs font-bold tracking-wider uppercase">
+            <span className="eyebrow">
               <Award size={14} />
               আমাদের সম্পর্কে
             </span>
-            <h2 className="mt-5 font-display text-4xl sm:text-5xl font-extrabold text-foreground leading-tight">
-              পরিচিতি — <span className="text-gradient">জননেতা রহমান</span>
+            <h2 className="mt-4 font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-foreground leading-tight">
+              পরিচিতি — <span className="text-gradient-animated">জননেতা রহমান</span>
             </h2>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
               একজন নিবেদিতপ্রাণ জনপ্রতিনিধি, যিনি দুই যুগেরও বেশি সময় ধরে সাধারণ মানুষের পাশে দাঁড়িয়েছেন।
