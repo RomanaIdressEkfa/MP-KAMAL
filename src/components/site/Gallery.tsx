@@ -45,7 +45,7 @@ const Gallery = () => {
               onClick={() => setOpen(p.src)}
               data-aos="zoom-in"
               data-aos-delay={(i % 4) * 80}
-              className={`group relative overflow-hidden rounded-2xl shadow-soft hover:shadow-premium transition-all ${p.span}`}
+              className={`group relative overflow-hidden rounded-2xl shadow-card hover:shadow-premium transition-all duration-500 hover:-translate-y-1 ${p.span}`}
             >
               <img
                 src={p.src}
