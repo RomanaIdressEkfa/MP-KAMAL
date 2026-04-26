@@ -56,11 +56,11 @@ const ServiceForm = () => {
         <div className="grid lg:grid-cols-5 gap-8 lg:gap-10 items-stretch">
           {/* Left info */}
           <div className="lg:col-span-2 flex flex-col" data-aos="fade-right">
-            <span className="inline-flex w-fit items-center gap-2 rounded-full bg-primary/10 text-primary px-4 py-2 text-xs font-bold tracking-wider uppercase">
+            <span className="eyebrow w-fit">
               <ShieldCheck size={14} /> নাগরিক সেবা
             </span>
-            <h2 className="mt-5 font-display text-4xl sm:text-5xl font-extrabold leading-tight text-foreground">
-              আপনার সমস্যা <span className="text-gradient">সরাসরি</span> আমাকে জানান
+            <h2 className="mt-4 font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight text-foreground">
+              আপনার সমস্যা <span className="text-gradient-animated">সরাসরি</span> আমাকে জানান
             </h2>
             <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
               আপনার এলাকার যে কোনো সমস্যা — রাস্তা, পানি, বিদ্যুৎ, শিক্ষা, স্বাস্থ্য — যা-ই হোক, আমাকে জানান।
