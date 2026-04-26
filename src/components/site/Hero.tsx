@@ -1,8 +1,8 @@
-import { useEffect, useRef, useState } from "react";
-import { ArrowRight, MessageSquareWarning } from "lucide-react";
-import hero1 from "@/assets/download.png";
-import hero2 from "@/assets/hero-2.jpg";
+import hero1 from "@/assets/hero-1.png";
+import hero2 from "@/assets/hero-2.png";
 import hero3 from "@/assets/hero-3.jpg";
+import { ArrowRight, MessageSquareWarning } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 
 const slides = [
   {
@@ -73,7 +73,10 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="relative h-[100svh] min-h-[600px] w-full overflow-hidden">
+    <section
+      id="home"
+      className="relative h-[100svh] min-h-[600px] w-full overflow-hidden"
+    >
       {/* Slides */}
       {slides.map((s, i) => (
         <div
@@ -140,7 +143,10 @@ const Hero = () => {
               className="group inline-flex items-center gap-2 rounded-full bg-white/10 backdrop-blur-md border-2 border-white/40 px-8 py-4 text-base font-bold text-white hover:bg-white hover:text-primary hover:scale-105 transition-all duration-300"
             >
               কার্যক্রম দেখুন
-              <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+              <ArrowRight
+                size={20}
+                className="group-hover:translate-x-1 transition-transform"
+              />
             </a>
           </div>
 
@@ -155,7 +161,9 @@ const Hero = () => {
               >
                 <span
                   className={`h-1.5 rounded-full transition-all duration-500 ${
-                    i === active ? "w-12 bg-accent shadow-gold" : "w-6 bg-white/40 group-hover:bg-white/70"
+                    i === active
+                      ? "w-12 bg-accent shadow-gold"
+                      : "w-6 bg-white/40 group-hover:bg-white/70"
                   }`}
                 />
               </button>

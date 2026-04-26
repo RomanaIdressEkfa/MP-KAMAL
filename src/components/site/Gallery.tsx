@@ -6,8 +6,8 @@ import g3 from "@/assets/activity-3.jpg";
 import g4 from "@/assets/activity-4.jpg";
 import g5 from "@/assets/activity-5.jpg";
 import g6 from "@/assets/activity-6.jpg";
-import g7 from "@/assets/download.png";
-import g8 from "@/assets/hero-2.jpg";
+import g7 from "@/assets/hero-1.png";
+import g8 from "@/assets/hero-2.png";
 import g9 from "@/assets/hero-3.jpg";
 
 const photos = [
