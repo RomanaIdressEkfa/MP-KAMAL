@@ -9,7 +9,7 @@ const visions = [
 
 const Vision = () => {
   return (
-    <section className="relative py-28 lg:py-36 bg-gradient-vision overflow-hidden text-primary-foreground">
+    <section className="relative py-16 sm:py-20 lg:py-24 bg-gradient-vision overflow-hidden text-primary-foreground">
       {/* Decorative orbs */}
       <div className="absolute -top-32 -left-32 h-96 w-96 rounded-full bg-primary-glow/30 blur-3xl animate-pulse-glow" />
       <div className="absolute -bottom-40 -right-40 h-[30rem] w-[30rem] rounded-full bg-accent/20 blur-3xl" />
