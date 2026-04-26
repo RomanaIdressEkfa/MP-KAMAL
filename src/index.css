@@ -95,20 +95,39 @@
 }
 
 @layer components {
-  /* Premium gradient text */
+  /* Premium gradient text — Bengali-safe (solid color fallback, gradient via clip on Latin only) */
   .text-gradient {
-    @apply bg-clip-text text-transparent;
+    color: hsl(145 75% 28%);
     background-image: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 1px 0 hsl(145 75% 28% / 0.04);
   }
   .text-gradient-gold {
-    @apply bg-clip-text text-transparent;
+    color: hsl(38 92% 42%);
     background-image: var(--gradient-gold);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
+  /* Animated variant — use solid premium green for Bengali readability with subtle glow */
   .text-gradient-animated {
-    @apply bg-clip-text text-transparent;
-    background: linear-gradient(120deg, hsl(145 75% 28%), hsl(142 70% 45%), hsl(42 95% 55%), hsl(145 75% 28%));
-    background-size: 300% 100%;
-    animation: gradientShift 8s ease infinite;
+    color: hsl(145 75% 28%);
+    position: relative;
+    background: linear-gradient(120deg, hsl(145 75% 28%), hsl(142 65% 38%), hsl(145 75% 28%));
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 6s ease infinite;
+  }
+  /* Fallback: if clipping fails (some Bengali rendering paths), keep visible color */
+  @supports not (-webkit-background-clip: text) {
+    .text-gradient, .text-gradient-gold, .text-gradient-animated {
+      -webkit-text-fill-color: currentColor;
+      background: none;
+    }
   }
 
   /* Glow card with shine */
