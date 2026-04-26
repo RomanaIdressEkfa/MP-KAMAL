@@ -3,9 +3,9 @@ import heroBg from "@/assets/hero-2.jpg";
 
 const VideoMessage = () => {
   return (
-    <section className="relative py-24 lg:py-32 bg-background overflow-hidden">
+    <section className="relative section-y bg-background overflow-hidden">
       <div className="container mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
           {/* Video block */}
           <div data-aos="fade-right" className="relative">
             <div className="relative aspect-video rounded-3xl overflow-hidden shadow-premium group cursor-pointer">
@@ -30,7 +30,7 @@ const VideoMessage = () => {
           {/* Message */}
           <div data-aos="fade-left">
             <Quote className="text-primary/30" size={64} />
-            <h2 className="mt-3 font-display text-4xl sm:text-5xl font-extrabold text-foreground leading-tight">
+            <h2 className="mt-3 font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-foreground leading-tight">
               আমার <span className="text-gradient">বার্তা</span> আপনাদের প্রতি
             </h2>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed">

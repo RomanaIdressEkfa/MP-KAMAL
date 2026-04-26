@@ -9,7 +9,7 @@ const visions = [
 
 const Vision = () => {
   return (
-    <section className="relative py-28 lg:py-36 bg-gradient-vision overflow-hidden text-primary-foreground">
+    <section className="relative py-16 sm:py-20 lg:py-24 bg-gradient-vision overflow-hidden text-primary-foreground">
       {/* Decorative orbs */}
       <div className="absolute -top-32 -left-32 h-96 w-96 rounded-full bg-primary-glow/30 blur-3xl animate-pulse-glow" />
       <div className="absolute -bottom-40 -right-40 h-[30rem] w-[30rem] rounded-full bg-accent/20 blur-3xl" />
@@ -27,7 +27,7 @@ const Vision = () => {
           <span className="inline-flex items-center gap-2 rounded-full bg-white/15 backdrop-blur px-4 py-2 text-xs font-bold tracking-wider uppercase border border-white/25">
             <Sparkles size={14} className="text-accent" /> আমাদের দৃষ্টিভঙ্গি
           </span>
-          <h2 className="mt-6 font-display text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-[1.05]">
+          <h2 className="mt-5 font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.05]">
             একটি <span className="text-gradient-gold">সমৃদ্ধ ও আলোকিত</span> আগামীর প্রত্যয়
           </h2>
           <p className="mt-6 text-lg sm:text-xl text-primary-foreground/85 leading-relaxed max-w-2xl">
@@ -36,7 +36,7 @@ const Vision = () => {
           </p>
         </div>
 
-        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
           {visions.map((v, i) => (
             <div
               key={v.num}

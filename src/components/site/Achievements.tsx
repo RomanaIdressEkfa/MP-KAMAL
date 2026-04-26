@@ -52,19 +52,19 @@ const Counter = ({ value, suffix }: { value: number; suffix: string }) => {
 
 const Achievements = () => {
   return (
-    <section className="relative py-24 lg:py-32 bg-background overflow-hidden">
+    <section className="relative section-y bg-background overflow-hidden">
       <div className="absolute inset-0 bg-gradient-radial pointer-events-none" />
       <div className="container mx-auto relative">
         <div className="text-center max-w-2xl mx-auto" data-aos="fade-up">
           <span className="inline-flex items-center gap-2 rounded-full bg-accent/15 text-accent-foreground px-4 py-2 text-xs font-bold tracking-wider uppercase">
             অর্জনসমূহ
           </span>
-          <h2 className="mt-5 font-display text-4xl sm:text-5xl font-extrabold text-foreground leading-tight">
-            সংখ্যায় <span className="text-gradient">আমাদের অর্জন</span>
+          <h2 className="mt-4 font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-foreground leading-tight">
+            সংখ্যায় <span className="text-gradient-animated">আমাদের অর্জন</span>
           </h2>
         </div>
 
-        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="mt-12 sm:mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
           {stats.map((s, i) => (
             <div
               key={s.label}

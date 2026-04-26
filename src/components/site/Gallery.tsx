@@ -26,26 +26,26 @@ const Gallery = () => {
   const [open, setOpen] = useState<string | null>(null);
 
   return (
-    <section className="relative py-24 lg:py-32 section-soft overflow-hidden">
+    <section className="relative section-y bg-background overflow-hidden">
       <div className="container mx-auto">
         <div className="text-center max-w-2xl mx-auto" data-aos="fade-up">
-          <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 text-primary px-4 py-2 text-xs font-bold tracking-wider uppercase">
+          <span className="eyebrow">
             ফটো গ্যালারি
           </span>
-          <h2 className="mt-5 font-display text-4xl sm:text-5xl font-extrabold text-foreground leading-tight">
-            স্মরণীয় <span className="text-gradient">মুহূর্তগুলো</span>
+          <h2 className="mt-4 font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-foreground leading-tight">
+            স্মরণীয় <span className="text-gradient-animated">মুহূর্তগুলো</span>
           </h2>
-          <p className="mt-4 text-muted-foreground text-lg">জনসেবার পথে চলার পথে কিছু মূল্যবান মুহূর্ত।</p>
+          <p className="mt-4 text-muted-foreground text-base sm:text-lg">জনসেবার পথে চলার পথে কিছু মূল্যবান মুহূর্ত।</p>
         </div>
 
-        <div className="mt-14 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 auto-rows-[180px] gap-4">
+        <div className="mt-10 sm:mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 auto-rows-[140px] sm:auto-rows-[180px] gap-3 sm:gap-4">
           {photos.map((p, i) => (
             <button
               key={i}
               onClick={() => setOpen(p.src)}
               data-aos="zoom-in"
               data-aos-delay={(i % 4) * 80}
-              className={`group relative overflow-hidden rounded-2xl shadow-soft hover:shadow-premium transition-all ${p.span}`}
+              className={`group relative overflow-hidden rounded-2xl shadow-card hover:shadow-premium transition-all duration-500 hover:-translate-y-1 ${p.span}`}
             >
               <img
                 src={p.src}

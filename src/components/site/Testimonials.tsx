@@ -38,20 +38,20 @@ const Testimonials = () => {
   const r = reviews[i];
 
   return (
-    <section className="relative py-24 lg:py-32 section-soft overflow-hidden">
+    <section className="relative section-y section-soft overflow-hidden">
       <div className="absolute inset-0 section-radial pointer-events-none" />
       <div className="container mx-auto relative">
         <div className="text-center max-w-2xl mx-auto" data-aos="fade-up">
-          <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 text-primary px-4 py-2 text-xs font-bold tracking-wider uppercase">
+          <span className="eyebrow">
             জনগণের মতামত
           </span>
-          <h2 className="mt-5 font-display text-4xl sm:text-5xl font-extrabold text-foreground leading-tight">
-            যা <span className="text-gradient">বলছেন তাঁরা</span>
+          <h2 className="mt-4 font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-foreground leading-tight">
+            যা <span className="text-gradient-animated">বলছেন তাঁরা</span>
           </h2>
         </div>
 
-        <div className="mt-14 max-w-4xl mx-auto" data-aos="fade-up">
-          <div className="relative rounded-3xl bg-card border border-border/60 p-10 sm:p-14 shadow-premium">
+        <div className="mt-10 sm:mt-12 max-w-4xl mx-auto" data-aos="fade-up">
+          <div className="relative rounded-3xl bg-card border border-border/60 p-7 sm:p-10 lg:p-14 shadow-premium">
             <Quote className="absolute top-6 right-6 text-primary/15" size={80} />
 
             <div className="grid sm:grid-cols-[auto_1fr] gap-8 items-center">

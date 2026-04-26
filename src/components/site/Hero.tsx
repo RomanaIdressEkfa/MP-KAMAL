@@ -73,7 +73,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="relative h-[100svh] min-h-[640px] w-full overflow-hidden">
+    <section id="home" className="relative h-[100svh] min-h-[600px] w-full overflow-hidden">
       {/* Slides */}
       {slides.map((s, i) => (
         <div
@@ -116,7 +116,7 @@ const Hero = () => {
                 <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
                 {s.eyebrow}
               </span>
-              <h1 className="mt-6 font-display text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white leading-[1.05] drop-shadow-2xl">
+              <h1 className="mt-5 font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.05] drop-shadow-2xl">
                 {s.title}
                 <br />
                 <span className="text-gradient-gold">{s.titleAccent}</span>
