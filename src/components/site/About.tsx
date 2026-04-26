@@ -18,32 +18,34 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
           {/* Images */}
           <div className="relative" data-aos="fade-right">
-            <div className="absolute -top-6 -left-6 h-32 w-32 rounded-3xl bg-gradient-primary opacity-20 blur-2xl" />
-            <div className="absolute -bottom-6 -right-6 h-40 w-40 rounded-3xl bg-accent opacity-30 blur-2xl" />
+            <div className="absolute -top-6 -left-6 h-32 w-32 rounded-3xl bg-gradient-primary opacity-20 blur-2xl animate-pulse-glow" />
+            <div className="absolute -bottom-6 -right-6 h-40 w-40 rounded-3xl bg-accent opacity-30 blur-2xl animate-float-slow" />
 
-            <div className="relative grid grid-cols-5 gap-4">
-              <div className="col-span-3 rounded-3xl overflow-hidden shadow-premium aspect-[4/5]">
+            <div className="relative grid grid-cols-5 gap-3 sm:gap-4">
+              <div className="col-span-3 group rounded-3xl overflow-hidden shadow-premium aspect-[4/5] relative">
                 <img
                   src={aboutLeader}
                   alt="জননেতা রহমান"
                   loading="lazy"
                   width={1024}
                   height={1280}
-                  className="h-full w-full object-cover hover:scale-105 transition-transform duration-700"
+                  className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-[1200ms]"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary-deep/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
-              <div className="col-span-2 flex flex-col gap-4">
-                <div className="rounded-3xl overflow-hidden shadow-elevated aspect-square">
+              <div className="col-span-2 flex flex-col gap-3 sm:gap-4">
+                <div className="rounded-3xl overflow-hidden shadow-elevated aspect-square group">
                   <img
                     src={activity4}
                     alt="জনসমাবেশে নেতা"
                     loading="lazy"
-                    className="h-full w-full object-cover hover:scale-110 transition-transform duration-700"
+                    className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-[1200ms]"
                   />
                 </div>
-                <div className="rounded-3xl bg-gradient-primary p-5 shadow-glow text-primary-foreground flex-1 flex flex-col justify-center">
-                  <div className="font-display text-4xl font-extrabold">২৫+</div>
-                  <div className="text-sm font-medium opacity-90 mt-1">বছরের জনসেবা</div>
+                <div className="rounded-3xl bg-gradient-primary p-5 shadow-glow text-primary-foreground flex-1 flex flex-col justify-center hover:scale-105 transition-transform duration-500 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent opacity-50" />
+                  <div className="relative font-display text-3xl sm:text-4xl font-extrabold">২৫+</div>
+                  <div className="relative text-sm font-medium opacity-90 mt-1">বছরের জনসেবা</div>
                 </div>
               </div>
             </div>
