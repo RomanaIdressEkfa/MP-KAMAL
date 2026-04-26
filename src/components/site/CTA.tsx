@@ -2,11 +2,11 @@ import { MessageSquareWarning, Phone } from "lucide-react";
 
 const CTA = () => {
   return (
-    <section className="relative py-24 lg:py-28 bg-background overflow-hidden">
+    <section className="relative py-12 sm:py-16 lg:py-20 bg-background overflow-hidden">
       <div className="container mx-auto">
         <div
           data-aos="zoom-in"
-          className="relative rounded-[2.5rem] overflow-hidden bg-gradient-primary p-10 sm:p-16 lg:p-20 shadow-premium"
+          className="relative rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden bg-gradient-primary p-8 sm:p-12 lg:p-16 shadow-premium"
         >
           {/* Glow */}
           <div className="absolute -top-32 -right-32 h-96 w-96 rounded-full bg-accent/40 blur-3xl animate-pulse-glow" />
