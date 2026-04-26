@@ -1,3 +1,3 @@
-# Welcome to your Lovable project
+# Welcome to your জননেতা রহমান website
 
-TODO: Document your project here
+TODO: https://bangla-pulse-premium.lovable.app/
