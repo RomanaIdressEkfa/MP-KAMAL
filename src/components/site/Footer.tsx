@@ -9,8 +9,8 @@ const Footer = () => {
           backgroundSize: "28px 28px",
         }}
       />
-      <div className="container mx-auto relative py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="container mx-auto relative py-12 lg:py-14">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3">
