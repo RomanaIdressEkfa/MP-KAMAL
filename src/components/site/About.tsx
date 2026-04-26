@@ -11,11 +11,11 @@ const points = [
 
 const About = () => {
   return (
-    <section id="about" className="relative section-soft py-24 lg:py-32 overflow-hidden">
+    <section id="about" className="relative section-soft section-y overflow-hidden">
       <div className="absolute inset-0 section-radial pointer-events-none" />
 
       <div className="container mx-auto relative">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
           {/* Images */}
           <div className="relative" data-aos="fade-right">
             <div className="absolute -top-6 -left-6 h-32 w-32 rounded-3xl bg-gradient-primary opacity-20 blur-2xl" />
